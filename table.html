@@ -1,42 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Simple Student Table</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Table</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 80%;
+      margin: auto;
+      border-collapse: collapse;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: white;
+    }
+
+    th, td {
+      padding: 12px 18px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #ffa31a;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #ffe0b3;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #ffa31a;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px) {
+      table {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<h2>Student Table</h2>
+  <h2>Student Table</h2>
 
-<table border="1">
+  <table>
     <thead>
-        <tr>
-            <th>First Name</th>
-            <th>Surname</th>
-            <th>Email</th>
-        </tr>
+      <tr>
+        <th>First Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+      </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Christler Rasec</td>
-            <td>Naval</td>
-            <td>Rasec@gmail.com</td>
-        </tr>
-        <tr>
-            <td>Mark Edison</td>
-            <td>Sudaria</td>
-            <td>markedisonsdr@gmail.com</td>
-        </tr>
-        <tr>
-            <td>Nicko</td>
-            <td>Padayao</td>
-            <td>nickol@gmail.com</td>
-        </tr>
+      <tr>
+        <td>Christler Rasec</td>
+        <td>Naval</td>
+        <td>rasec@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Mark Edison</td>
+        <td>Sudaria</td>
+        <td>markedisonsdr@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Nicko</td>
+        <td>Padayao</td>
+        <td>nickol@gmail.com</td>
+      </tr>
     </tbody>
-</table>
+  </table>
 
-<br>
-<a href="index.html">Back to Home</a>
+  <a href="index.html">← Back to Home</a>
 
 </body>
 </html>
