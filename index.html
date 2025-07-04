@@ -1,54 +1,153 @@
-<!DOCTYPE>
-<html>
-    <head>
-      <head><title>My Website</title></head>
-    </head>
-    <body>
-<h1>Christler Rasec O. Naval</h1>
-<img src="naval.jpg" alt="My Photo" width="100">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Christler Rasec O. Naval - Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<p><a href="gallery.html">Gallery</a></p>
-<p><a href="table.html">Table</a></p>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      padding: 40px 20px;
+    }
 
-<ul>
-<li><b>Address:</b> B15F Molave st. Brgy. Malaya, Mariveles, Bataan</li>
-<li>contact: 091256848483</li>
-<li>Email: rasec@gmail.com</li>
-</ul>
-<h3>PERSONAL INFORMATION</h3>
-<ul>
-<li>Age: 26</li>
-<li>Birthdate: October 29, 1998</li>
-<li>Civil Status: Single</li>
-<li>Nationality: Filipino </li>
-<li>Gender: Male</li>
-</ul>
-<h3>OBJECTIVE</h3>
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
 
-<b><p>Motivated and detail-oriented professional seeking an IT Support role at Smart Telecom, where I can leverage my skills to contribute to team success and support organizational goals. Eager to grow professionally while delivering high-quality results in a dynamic and collaborative environment. </p></b>
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ffa31a;
+      padding-bottom: 15px;
+    }
 
-<h3>EDUCATION BACKGROUND</h3>
-<ul>
-<li>Tertiary: Polytechnic University of the Philippines</li>
-<li>Year of Graduate: 2023-2025</li>
-<br>
-<li>Secondary: Mariveles National High School – Malaya</li>
-<li>Year of Graduate: 2014- 2017</li>
-<br>
-<li>Primary : BEPZ Elementary School</li>
-<li>Year of Graduate: 2008- 2013</li>
-</ul>
-<h3>WORK EXPERIENCE</h3>
-<ul>
-<li>Company: FAB</li>
-<li>Position: Marshall</li>              
-<li>From: February 15, 2021  To: May 24, 2022 </li>
-</ul>
-<h3>REFERENCE</h3>
-<ul>
-<li>Name: Joseph Orlina</li>
-<li>Company: Local Government   Position: Admin Personal Assistant</li>
-<li>Contact Number: 0926 058 5284</li>
-<ul>
-    </body>
+    .header img {
+      width: 100px;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      color: #333;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #ffa31a;
+      font-weight: bold;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      color: #ffa31a;
+      font-size: 20px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <img src="naval.jpg" alt="Christler Naval">
+    <div>
+      <h1>Christler Rasec O. Naval</h1>
+      <p>B15F Molave St., Brgy. Malaya, Mariveles, Bataan</p>
+      <p>📞 0912 568 48483 | 📧 rasec@gmail.com</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="gallery.html">📷 Gallery</a>
+    <a href="table.html">📊 Table</a>
+  </nav>
+
+  <section>
+    <h2>Personal Information</h2>
+    <ul>
+      <li><span class="bold">Age:</span> 26</li>
+      <li><span class="bold">Birthdate:</span> October 29, 1998</li>
+      <li><span class="bold">Civil Status:</span> Single</li>
+      <li><span class="bold">Nationality:</span> Filipino</li>
+      <li><span class="bold">Gender:</span> Male</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Objective</h2>
+    <p><strong>Motivated and detail-oriented professional</strong> seeking an IT Support role at Smart Telecom, where I can leverage my skills to contribute to team success and support organizational goals. Eager to grow professionally while delivering high-quality results in a dynamic and collaborative environment.</p>
+  </section>
+
+  <section>
+    <h2>Education Background</h2>
+    <ul>
+      <li><span class="bold">Tertiary:</span> Polytechnic University of the Philippines (2023–2025)</li>
+      <li><span class="bold">Secondary:</span> Mariveles National High School – Malaya (2014–2017)</li>
+      <li><span class="bold">Primary:</span> BEPZ Elementary School (2008–2013)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Work Experience</h2>
+    <ul>
+      <li><span class="bold">Company:</span> FAB</li>
+      <li><span class="bold">Position:</span> Marshall</li>
+      <li><span class="bold">Duration:</span> February 15, 2021 – May 24, 2022</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Reference</h2>
+    <ul>
+      <li><span class="bold">Name:</span> Joseph Orlina</li>
+      <li><span class="bold">Company:</span> Local Government</li>
+      <li><span class="bold">Position:</span> Admin Personal Assistant</li>
+      <li><span class="bold">Contact:</span> 0926 058 5284</li>
+    </ul>
+  </section>
+</div>
+
+</body>
 </html>
